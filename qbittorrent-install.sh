@@ -11,4 +11,4 @@ set -e
 # Flatpak install
 ./flatpak-install.sh
 
-flatpak install flathub org.qbittorrent.qBittorrent
+flatpak install flathub org.qbittorrent.qBittorrent -y

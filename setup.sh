@@ -2,8 +2,8 @@
 
 set -e
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo apt update -y
+sudo apt upgrade -y
 
 # nvidia drivers
 ./nvidia-drivers-install.sh
@@ -46,3 +46,6 @@ sudo apt-get upgrade -y
 
 # qbittorrent
 ./qbittorrent-install.sh
+
+# touchpad bs
+./touchpad-setup.sh

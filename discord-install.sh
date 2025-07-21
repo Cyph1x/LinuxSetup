@@ -16,4 +16,4 @@ set -e
 # Flatpak install
 ./flatpak-install.sh
 
-flatpak install flathub com.discordapp.Discord
+flatpak install flathub com.discordapp.Discord -y

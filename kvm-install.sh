@@ -11,7 +11,7 @@ sudo apt install qemu-system libvirt-daemon-system virtinst virt-manager virt-vi
 sudo systemctl enable libvirtd.service
 
 
-# sudo apt-get install bridge-utils cpu-checker libvirt-clients libvirt-daemon-system -y
+# sudo apt install bridge-utils cpu-checker libvirt-clients libvirt-daemon-system -y
 
 # ./qemu-install.sh
 
