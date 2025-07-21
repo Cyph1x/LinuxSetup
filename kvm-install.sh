@@ -1,4 +1,6 @@
 #!/bin/bash
+
+set -e
 # thanks https://sysguides.com/install-kvm-on-linux
 
 sudo apt --fix-broken install -y

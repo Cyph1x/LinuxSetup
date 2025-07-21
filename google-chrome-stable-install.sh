@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 sudo apt install wget -y
 
 mkdir /tmp/chrome-stable-install

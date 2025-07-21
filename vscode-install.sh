@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # sudo snap install --classic code
 mkdir /tmp/vscode-install
 

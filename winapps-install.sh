@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Docker is the selected backend so docker must be installed
 #./docker-install.sh
 

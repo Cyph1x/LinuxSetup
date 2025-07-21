@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # sudo dpkg --add-architecture i386
 # sudo apt-get update -y
 # sudo apt install steam -y

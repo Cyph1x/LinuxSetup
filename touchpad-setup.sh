@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 xinput list
 read -p "Enter touchpad id: " touchpad_id
 

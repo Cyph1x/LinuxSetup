@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # this install requires flatpak
 ./flatpak-install.sh
 

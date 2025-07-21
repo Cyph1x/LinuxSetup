@@ -1,10 +1,11 @@
 #!/bin/bash
 
+set -e
+
 # Delete conflicting pre-installed packages
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
 # TODO continue install https://docs.docker.com/desktop/setup/install/linux/
-./qemu-install.sh
 ./kvm-install.sh
 
 sudo apt --fix-broken install -y

@@ -1,12 +1,19 @@
 #!/bin/bash
 
-sudo apt install wget -y
+set -e
 
-mkdir /tmp/discord-install
+# sudo apt install wget -y
 
-wget https://discord.com/api/download?platform=linux -O /tmp/discord-install/install.deb
+# mkdir /tmp/discord-install
 
-sudo apt --fix-broken install
-sudo dpkg -i /tmp/discord-install/install.deb
+# wget https://discord.com/api/download?platform=linux -O /tmp/discord-install/install.deb
 
-rm -rf /tmp/discord-install
+# sudo apt --fix-broken install
+# sudo dpkg -i /tmp/discord-install/install.deb
+
+# rm -rf /tmp/discord-install
+
+# Flatpak install
+./flatpak-install.sh
+
+flatpak install flathub com.discordapp.Discord

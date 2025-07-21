@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 # Snap install
 #sudo snap install bitwarden
 # Bitwarden requires access to the password-manager-service for secure storage. 
@@ -8,6 +10,8 @@
 #echo "export SSH_AUTH_SOCK=/home/$USER/snap/bitwarden/current/.bitwarden-ssh-agent.sock" >> /home/$USER/.bashrc
 
 # Flatpak install
+./flatpak-install.sh
+
 flatpak install flathub com.bitwarden.desktop -y
 # sshagent stuff (flatpak install)
 echo "export SSH_AUTH_SOCK=/home/$USER/.var/app/com.bitwarden.desktop/data/.bitwarden-ssh-agent.sock" >> /home/$USER/.bashrc

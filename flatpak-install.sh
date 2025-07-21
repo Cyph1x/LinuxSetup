@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 sudo apt --fix-broken install -y
 
 sudo apt install flatpak -y

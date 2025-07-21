@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 ./docker-install.sh
 
 sudo apt-get update -y

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
@@ -19,16 +21,13 @@ sudo apt-get upgrade -y
 ./flatpak-install.sh
 
 # steam
-./steam-install.sh
+# ./steam-install.sh
 
 # vscode
 ./vscode-install.sh
 
 # protonplus
-./protonplus-install.sh
-
-# qemu
-./qemu-install.sh
+# ./protonplus-install.sh
 
 # kvm
 ./kvm-install.sh
@@ -40,10 +39,10 @@ sudo apt-get upgrade -y
 ./docker-desktop-install.sh
 
 # tlp
-./tlp-install.sh
+# ./tlp-install.sh
 
 # solaar
-./solaar-install.sh
+# ./solaar-install.sh
 
 # qbittorrent
 ./qbittorrent-install.sh
