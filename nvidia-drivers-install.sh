@@ -2,16 +2,33 @@
 
 set -e
 
-# if nvidia drivers need to build anything the environment needs to be setup
 sudo apt --fix-broken install -y
-sudo apt install build-essential pkg-config libglvnd-dev -y
-
-sudo ubuntu-drivers list
-
-sudo ubuntu-drivers install
-
-sudo dpkg --add-architecture i386
 sudo apt update -y
 
-# Install the latest nvidia driver
-sudo ubuntu-drivers install nvidia
+# Going to need curl
+sudo apt install curl -y
+
+TEMP_DIR="/tmp/nvidia-driver-install"
+echo "Temporary directory: $TEMP_DIR"
+
+mkdir -p "$TEMP_DIR"
+
+DISTRO=ubuntu2404
+ARCH=x86_64
+ARCH_EXT=amd64
+
+# Install kernel headers
+sudo apt install linux-headers-$(uname -r)
+
+# Network repository installation
+curl -L -o "$TEMP_DIR/cuda-keyring.deb" https://developer.download.nvidia.com/compute/cuda/repos/$DISTRO/$ARCH/cuda-keyring_1.1-1_all.deb
+sudo apt install -y "$TEMP_DIR/cuda-keyring.deb"
+sudo apt update -y
+
+# Install the kernel modules
+sudo apt install nvidia-open -y
+
+# Clean up
+rm -rf "$TEMP_DIR"
+
+echo "Installation complete. Temporary files cleaned up."
