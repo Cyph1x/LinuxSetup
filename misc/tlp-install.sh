@@ -10,7 +10,7 @@ sudo apt install tlp tlp-rdw -y
 
 sudo tlp start
 
-sudo cp ./tlp/00-default.conf /etc/tlp.d/
+sudo cp ./config/tlp/00-default.conf /etc/tlp.d/
 
 # apply the new config
 sudo tlp start

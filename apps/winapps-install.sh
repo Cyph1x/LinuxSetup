@@ -9,8 +9,8 @@ sudo apt --fix-broken install -y
 sudo apt install curl dialog freerdp3-x11 git iproute2 libnotify-bin netcat-openbsd -y
 
 mkdir -p ~/.config/winapps
-cp winapps/compose.yaml ~/.config/winapps/compose.yaml 
-cp winapps/winapps.conf ~/.config/winapps/winapps.conf
+cp config/winapps/compose.yaml ~/.config/winapps/compose.yaml 
+cp config/winapps/winapps.conf ~/.config/winapps/winapps.conf
 
 # who knows maybe the it was running from a previous install
 sudo docker compose --file ~/.config/winapps/compose.yaml down

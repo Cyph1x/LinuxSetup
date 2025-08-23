@@ -1,0 +1,24 @@
+%YAML 1.3
+---
+- Device: BFA747EF
+- Rule:
+  - Or:
+    - Process: chrome
+    - Process: code
+    - Process: firefox
+  - Rule:
+    - Key: [Forward Button, pressed]
+    - KeyPress:
+      - [Control_L, Page_Down]
+      - click
+  - Rule:
+    - Key: [Back Button, pressed]
+    - KeyPress:
+      - [Control_L, Page_Up]
+      - click
+- Rule:
+  - Key: [Mouse Gesture Button, pressed]
+  - KeyPress:
+    - Print
+    - click
+...

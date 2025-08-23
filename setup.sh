@@ -42,13 +42,16 @@ bash ./apps/docker-desktop-install.sh
 # bash ./misc/tlp-install.sh
 
 # solaar
-# bash ./apps/solaar-install.sh
+bash ./apps/solaar-install.sh
+
+# Gnome Extensions Manager
+bash ./apps/extension-manager-install.sh
 
 # qbittorrent
 bash ./apps/qbittorrent-install.sh
 
 # linux tools
-bash ./misc/linux-tools.sh
+bash ./misc/linux-tools-install.sh
 
 # touchpad bs
 bash ./misc/touchpad-setup.sh
