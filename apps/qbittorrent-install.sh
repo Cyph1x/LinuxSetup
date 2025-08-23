@@ -9,6 +9,6 @@ set -e
 # sudo apt install qbittorrent -y
 
 # Flatpak install
-./flatpak-install.sh
+bash ./apps/flatpak-install.sh
 
 flatpak install flathub org.qbittorrent.qBittorrent -y

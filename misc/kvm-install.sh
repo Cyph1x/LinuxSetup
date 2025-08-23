@@ -13,7 +13,7 @@ sudo systemctl enable libvirtd.service
 
 # sudo apt install bridge-utils cpu-checker libvirt-clients libvirt-daemon-system -y
 
-# ./qemu-install.sh
+# bash ./dev/qemu-install.sh
 
 # allow the user access to the system connection
 sudo usermod -aG libvirt $USER

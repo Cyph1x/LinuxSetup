@@ -12,6 +12,7 @@ TEMP_DIR="/tmp/nvidia-driver-install"
 echo "Temporary directory: $TEMP_DIR"
 
 mkdir -p "$TEMP_DIR"
+trap 'rm -rf "$TEMP_DIR"' EXIT
 
 DISTRO=ubuntu2404
 ARCH=x86_64
@@ -28,7 +29,4 @@ sudo apt update -y
 # Install the kernel modules
 sudo apt install nvidia-open -y
 
-# Clean up
-rm -rf "$TEMP_DIR"
-
-echo "Installation complete. Temporary files cleaned up."
+echo "Installation complete."

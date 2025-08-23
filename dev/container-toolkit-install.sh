@@ -2,7 +2,7 @@
 
 set -e
 
-./docker-install.sh
+bash ./dev/docker-install.sh
 
 sudo apt-get update -y
 sudo apt install curl -y

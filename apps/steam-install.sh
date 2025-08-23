@@ -10,4 +10,4 @@ set -e
 #sudo snap install steam
 
 # recommened method
-./helpers/install-deb-from-url.sh "https://cdn.fastly.steamstatic.com/client/installer/steam.deb"
+bash ./helpers/install-deb-from-url.sh "https://cdn.fastly.steamstatic.com/client/installer/steam.deb"

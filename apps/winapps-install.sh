@@ -3,7 +3,7 @@
 set -e
 
 # Docker is the selected backend so docker must be installed
-#./docker-install.sh
+#bash ./dev/docker-install.sh
 
 sudo apt --fix-broken install -y
 sudo apt install curl dialog freerdp3-x11 git iproute2 libnotify-bin netcat-openbsd -y

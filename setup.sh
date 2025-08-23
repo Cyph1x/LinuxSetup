@@ -6,46 +6,49 @@ sudo apt update -y
 sudo apt upgrade -y
 
 # nvidia drivers
-./nvidia-drivers-install.sh
+bash ./misc/nvidia-drivers-install.sh
 
 # google chrome (stable)
-./google-chrome-stable-install.sh
+bash ./apps/google-chrome-stable-install.sh
 
 # bitwarden
-./bitwarden-install.sh
+bash ./apps/bitwarden-install.sh
 
 # discord
-./discord-install.sh
+bash ./apps/discord-install.sh
 
 # flatpak
-./flatpak-install.sh
+bash ./apps/flatpak-install.sh
 
 # steam
-# ./steam-install.sh
+# bash ./apps/steam-install.sh
 
 # vscode
-./vscode-install.sh
+bash ./apps/vscode-install.sh
 
 # protonplus
-# ./protonplus-install.sh
+# bash ./apps/protonplus-install.sh
 
 # kvm
-./kvm-install.sh
+bash ./misc/kvm-install.sh
 
 # docker
-./docker-install.sh
+bash ./dev/docker-install.sh
 
 # docker desktop
-./docker-desktop-install.sh
+bash ./apps/docker-desktop-install.sh
 
 # tlp
-# ./tlp-install.sh
+# bash ./misc/tlp-install.sh
 
 # solaar
-# ./solaar-install.sh
+# bash ./apps/solaar-install.sh
 
 # qbittorrent
-./qbittorrent-install.sh
+bash ./apps/qbittorrent-install.sh
+
+# linux tools
+bash ./misc/linux-tools.sh
 
 # touchpad bs
-./touchpad-setup.sh
+bash ./misc/touchpad-setup.sh

@@ -16,6 +16,7 @@ TEMP_DIR="/tmp/${URL_HASH}-install"
 echo "Temporary directory: $TEMP_DIR"
 
 mkdir -p "$TEMP_DIR"
+trap 'rm -rf "$TEMP_DIR"' EXIT
 
 echo "Downloading .deb package from $DEB_URL"
 
@@ -24,7 +25,4 @@ curl -L -o "$TEMP_DIR/install.deb" "$DEB_URL"
 # Install the .deb package
 sudo apt install -y "$TEMP_DIR/install.deb"
 
-# Clean up
-rm -rf "$TEMP_DIR"
-
-echo "Installation complete. Temporary files cleaned up."
+echo "Installation complete."
