@@ -56,5 +56,8 @@ bash ./apps/qbittorrent-install.sh
 # linux tools
 bash ./dev/linux-tools-install.sh
 
+# Gnome config
+bash ./misc/gnome-config.sh
+
 # touchpad bs
 bash ./misc/touchpad-setup.sh
