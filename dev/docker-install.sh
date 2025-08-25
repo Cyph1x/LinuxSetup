@@ -6,7 +6,7 @@ set -e
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt remove $pkg; done
 
 # TODO continue install https://docs.docker.com/desktop/setup/install/linux/
-bash ./dev/kvm-install.sh
+bash ./misc/kvm-install.sh
 
 sudo apt --fix-broken install -y
 

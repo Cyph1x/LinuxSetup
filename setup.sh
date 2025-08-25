@@ -14,6 +14,9 @@ bash ./apps/google-chrome-stable-install.sh
 # bitwarden
 bash ./apps/bitwarden-install.sh
 
+# git config
+bash ./dev/git-config.sh
+
 # discord
 bash ./apps/discord-install.sh
 
@@ -51,7 +54,7 @@ bash ./apps/extension-manager-install.sh
 bash ./apps/qbittorrent-install.sh
 
 # linux tools
-bash ./misc/linux-tools-install.sh
+bash ./dev/linux-tools-install.sh
 
 # touchpad bs
 bash ./misc/touchpad-setup.sh

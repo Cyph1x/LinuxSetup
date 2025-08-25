@@ -10,7 +10,5 @@ mkdir -p ~/.config/solaar
 cp config/solaar/rules.yaml ~/.config/solaar/rules.yaml
 
 # Install the solaar gnome extension
-pip3 install --upgrade gnome-extensions-cli --break-system-packages
-
 # https://extensions.gnome.org/extension/6162/solaar-extension/
-gnome-extensions-cli install 6162
+bash helpers/install-gnome-extension.sh "solaar-extension@sidevesh"

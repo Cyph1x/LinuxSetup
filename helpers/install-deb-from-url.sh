@@ -22,7 +22,13 @@ echo "Downloading .deb package from $DEB_URL"
 
 curl -L -o "$TEMP_DIR/install.deb" "$DEB_URL"
 
+
+# Extract package name and version
+PACKAGE_NAME=$(dpkg-deb -f "$TEMP_DIR/install.deb" Package)
+PACKAGE_VERSION=$(dpkg-deb -f "$TEMP_DIR/install.deb" Version)
+echo "Package to install: $PACKAGE_NAME ($PACKAGE_VERSION)"
+
 # Install the .deb package
 sudo apt install -y "$TEMP_DIR/install.deb"
 
-echo "Installation complete."
+echo "Installation complete: $PACKAGE_NAME ($PACKAGE_VERSION)"

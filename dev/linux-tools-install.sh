@@ -10,6 +10,7 @@ sudo apt install linux-tools-common linux-tools-generic linux-tools-`uname -r` -
 
 # For some really stupid reason perf doesn't install
 # So we have to build from source
+# (See https://bugs.launchpad.net/ubuntu/+source/linux-hwe-6.14/+bug/2117159)
 sudo apt install build-essential git flex bison linux-headers-`uname -r` libelf-dev libpfm4-dev libtraceevent-dev asciidoc xmlto -y
 
 TEMP_DIR="/tmp/perf-install"
