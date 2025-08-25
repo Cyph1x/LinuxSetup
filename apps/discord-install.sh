@@ -30,4 +30,4 @@ curl -L -o "$TEMP_DIR/VencordInstallerCli-linux" "https://github.com/Vendicated/
 
 chmod +x "$TEMP_DIR/VencordInstallerCli-linux"
 
-"$TEMP_DIR/VencordInstallerCli-linux" --install --branch stable
+sudo "$TEMP_DIR/VencordInstallerCli-linux" --install --branch stable
